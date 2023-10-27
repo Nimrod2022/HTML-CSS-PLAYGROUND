@@ -1,146 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!--SEO optimization-->    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <!--SEO optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="flex items-center justify-between px-28 py-5" >
-            <!-- gaps- 1,2,3,4,5,6,7,8,9,10 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96 -->
-            <div class="flex gap-12 items-center">
-            <div class="p-2">
-                <img src="https://assets.website-files.com/64fb00e0ee6d5efc80b543ff/6502071b0e3f30b95ad4d095_PIXEL%20PULSE.svg" alt="logo" class="h-12">
-            </div>
-            <div>
-                <ul class="flex gap-10">
-                    <li class="hover:bg-blue-100 p-2 hover:rounded-md">Home</li>
-                    <li class="hover:bg-blue-100 p-2 hover:rounded-md">About</li>
-                    <li class="hover:bg-blue-100 p-2 hover:rounded-md">Projects</li>
-                </ul>
-                
-            </div>
-            </div>
-            <div>
-                <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">Contact us</button>
-            </div>
-
-        </nav>
-
-        <section class="flex px-28 pt-20 items-center">
-            <div class="w-[100%]">
-                <h1 class="font-bold text-5xl">Elevate your digital marketing frontier</h1>
-                <p class="py-10">PixelPulse crafts solutions, transforming your brand's digital journey with innovative, targeted strategies.</p>
-                <div class="flex gap-5">
-                    <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">Contact us</button>
-                    <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">Learn more</button>
-                </div>
-
-            </div>
-
-            <div class="w-[100%]">
-                <img src="https://assets.website-files.com/64fb00e0ee6d5efc80b543ff/6509a36c1c0bf8ccfb45d295_priscilla-du-preez-XkKCui44iM0-unsplash.webp" alt="home image" class="rounded-xl">
-            </div>
-
-        </section>
-
-        <!--Sponsors section-->
-        <section class="flex px-28 pt-20 py-20 items-center">
-            <div>
-                <p class="font-bold">Endorsed by global brands and startups</p>
-                <div class="flex pt-10 items-center gap-28">
-                    <div class="flex items-center space-x-4">
-                        <img src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg" alt="intel-logo">
-                        <h5 class="font-bold text-2xl">Intellio</h5>
-                    </div>
-                    
-                    <div class="flex items-center space-x-4">
-                        <img src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eaa0e8b291ff52b76825_logo.jpeg" alt="tagline-logo" >
-                        <h5 class="font-bold text-2xl">Gasglow</h5>
-                    </div>
-
-                    <div class="flex items-center space-x-4">
-                        <img src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg" alt="go-logo" >
-                        <h5 class="font-bold text-2xl">PetOil</h5>
-                    </div>
-                </div>               
-                
-            </div>
-        </section>
-         <!--Description section-->
-        <section class="px-28 pt-20 bg-gray-700 text-white">
-            <div class="pb-22">
-                <h3 class="font-bold text-3xl">Case studies</h3>
-                <p class="py-5 text-lg leading-2">Delve into our success stories, showcasing powerful results and innovative strategies in digital marketing.</p>
-            </div>
-            
-            <div class="my-8 border-t-1 border-gray-400"></div>
-
-            <div class="flex pt-6 gap-28 pb-20 items-center">
-
-                <div class="flex-col">
-                    <div class="flex items-center space-x-4">
-                        <div>
-                            <img src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg" alt="green-eco">
-                        </div>                    
-                        <div>
-                            <h5 class="font-bold text-md">Green Eco</h5>
-                            <h6 >Marketing Consultation</h6>
-                        </div>
-                    </div>
-
-                    <div class="pt-10" >
-                        <h4 class="font-bold text-md">Strategic consultation boosts market impact</h4>
-                        <p class="pt-4">Explore how GreenEco Landscapes partnered with PixelPulse to elevate their marketing strategies,
-                             achieving significant market impact.</p>
-                    </div>
-                </div>
-
-
-                <div class="flex-col">
-                    <div class="flex items-center space-x-4">
-                        <div>
-                            <img src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eaa0e8b291ff52b76825_logo.jpeg" alt="green-eco" >
-                        </div>                    
-                        <div>
-                            <h5 class="font-bold text-md">Eco Tech</h5>
-                            <h6 >Web Development</h6>
-                        </div>
-                    </div>
-
-                    <div class="pt-10">
-                        <h4 class="font-bold text-md">Revamped website drives conversion surge</h4>
-                        <p class="pt-4">Discover how Eco Tech partnered with PixelPulse to overhaul 
-                            their website, resulting in a significant boost in conversions.</p>
-                    </div>
-                </div>
-
-
-                <div class="flex-col">
-                    <div class="flex items-center space-x-4">
-                        <div>
-                            <img src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501e8ffe02f681227dc18d9_logo.jpeg" alt="green-eco">
-                        </div>                    
-                        <div>
-                            <h5 class="font-bold text-md">Global Solutions</h5>
-                            <h6 >Social Media</h6>
-                        </div>
-                    </div>
-
-                    <div class="pt-10">
-                        <h4 class="font-bold text-md">Social media mastery drives engagement</h4>
-                        <p class="pt-4">Learn how GlobalSolutions Ltd. partnered with PixelPulse to harness
-                             the power of social media, resulting in unprecedented engagement.</p>
-                    </div>
-                </div>               
-
-            </div>        
-
-        </section>
-
+      <nav class="flex items-center justify-between px-28 py-5">
+        <!-- gaps- 1,2,3,4,5,6,7,8,9,10 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96 -->
+        <div class="flex gap-12 items-center">
+          <div class="p-2">
+            <img
+              src="https://assets.website-files.com/64fb00e0ee6d5efc80b543ff/6502071b0e3f30b95ad4d095_PIXEL%20PULSE.svg"
+              alt="logo"
+              class="h-12"
+            />
+          </div>
+          <div>
+            <ul class="flex gap-10">
+              <li class="hover:bg-blue-100 p-2 hover:rounded-md">Home</li>
+              <li class="hover:bg-blue-100 p-2 hover:rounded-md">About</li>
+              <li class="hover:bg-blue-100 p-2 hover:rounded-md">Projects</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">
+            Contact us
+          </button>
+        </div>
+      </nav>
     </header>
-</body>
+    <section class="flex px-28 pt-20 items-center">
+      <div class="w-[100%]">
+        <h1 class="font-bold text-5xl">
+          Elevate your digital marketing frontier
+        </h1>
+        <p class="py-10">
+          PixelPulse crafts solutions, transforming your brand's digital journey
+          with innovative, targeted strategies.
+        </p>
+        <div class="flex gap-5">
+          <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">
+            Contact us
+          </button>
+          <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">
+            Learn more
+          </button>
+        </div>
+      </div>
+
+      <div class="w-[100%]">
+        <img
+          src="https://assets.website-files.com/64fb00e0ee6d5efc80b543ff/6509a36c1c0bf8ccfb45d295_priscilla-du-preez-XkKCui44iM0-unsplash.webp"
+          alt="home image"
+          class="rounded-xl"
+        />
+      </div>
+    </section>
+
+    <!--Sponsors section-->
+    <section class="flex px-28 pt-20 py-20 items-center">
+      <div>
+        <p class="font-bold">Endorsed by global brands and startups</p>
+        <div class="flex pt-10 items-center gap-28">
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg"
+              alt="intel-logo"
+              class="rounded-full h-12 w-12"
+            />
+            <h5 class="font-bold text-1xl">Intellio</h5>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eaa0e8b291ff52b76825_logo.jpeg"
+              alt="tagline-logo"
+              class="rounded-full h-12 w-12"
+            />
+            <h5 class="font-bold text-11xl">Gasglow</h5>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg"
+              alt="go-logo"
+              class="rounded-full h-12 w-12"
+            />
+            <h5 class="font-bold text-1xl">PetOil</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Description section-->
+    <section class="px-28 pt-20 bg-gray-700 text-white">
+      <div class="pb-22">
+        <h3 class="font-bold text-3xl">Case studies</h3>
+        <p class="py-5 text-lg leading-2">
+          Delve into our success stories, showcasing powerful results and
+          innovative strategies in digital marketing.
+        </p>
+      </div>
+
+      <hr class="my-8 border-t-1 border-gray-400" />
+
+      <div class="flex pt-6 gap-28 pb-20 items-center">
+        <div class="flex-col">
+          <div class="flex items-center space-x-4">
+            <div>
+              <img
+                src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg"
+                alt="green-eco"
+                class="rounded-full h-12 w-12"
+              />
+            </div>
+            <div>
+              <h5 class="font-bold text-md">Green Eco</h5>
+              <h6>Marketing Consultation</h6>
+            </div>
+          </div>
+
+          <div class="pt-10">
+            <h4 class="font-bold text-md">
+              Strategic consultation boosts market impact
+            </h4>
+            <p class="pt-4">
+              Explore how GreenEco Landscapes partnered with PixelPulse to
+              elevate their marketing strategies, achieving significant market
+              impact.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-col">
+          <div class="flex items-center space-x-4">
+            <div>
+              <img
+                src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eaa0e8b291ff52b76825_logo.jpeg"
+                alt="green-eco"
+                class="rounded-full h-12 w-12"
+              />
+            </div>
+            <div>
+              <h5 class="font-bold text-md">Eco Tech</h5>
+              <h6>Web Development</h6>
+            </div>
+          </div>
+
+          <div class="pt-10">
+            <h4 class="font-bold text-md">
+              Revamped website drives conversion surge
+            </h4>
+            <p class="pt-4">
+              Discover how Eco Tech partnered with PixelPulse to overhaul their
+              website, resulting in a significant boost in conversions.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-col">
+          <div class="flex items-center space-x-4">
+            <div>
+              <img
+                src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501e8ffe02f681227dc18d9_logo.jpeg"
+                alt="green-eco"
+                class="rounded-full h-12 w-12"
+              />
+            </div>
+            <div>
+              <h5 class="font-bold text-md">Global Solutions</h5>
+              <h6>Social Media</h6>
+            </div>
+          </div>
+
+          <div class="pt-10">
+            <h4 class="font-bold text-md">
+              Social media mastery drives engagement
+            </h4>
+            <p class="pt-4">
+              Learn how GlobalSolutions Ltd. partnered with PixelPulse to
+              harness the power of social media, resulting in unprecedented
+              engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <section class="px-28 pt-20">
+      <div class="flex items-center space-x-4">
+        <img
+          src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg"
+          alt="logo"
+          class="h-12"
+        />
+        <h5 class="font-bold text-2xl text-[#6083E3]">Logoipsum</h5>
+      </div>
+
+      <p class="w-[50%] pt-10 font-semibold text-xl">
+        "Working with PixelPulse was a game-changer. Their team's expertise
+        dramatically elevated our online presence, ensuring we resonated with
+        our target audience like never before."
+      </p>
+
+      <h4 class="font-bold pt-5">Jordan Smith</h4>
+      <h4 class="pb-20">TechSolutions Inc.</h4>
+    </section>
+
+    <section class="px-28 pt-10 bg-gray-700 text-white">
+      <div>
+        <h5 class="text-1xl text-[#6083E3]">Services</h5>
+        <h2 class="text-2xl pt-5">Digital solutions delivered</h2>
+        <p class="text-1xl pt-5 w-[50%]">
+          Expert strategies tailored for your business. Experience growth,
+          innovation, and increased market presence.
+        </p>
+      </div>
+
+      <div class="pt-10 flex">
+        <div>
+          <div class="flex items-top gap-4">
+            <img
+              src="https://www.shutterstock.com/image-vector/light-bulb-line-icon-vector-260nw-416374336.jpg"
+              alt="bulb"
+              class="rounded-full mt-1 h-6 w-6"
+            />
+            <p class="w-[100%]">
+              <span class="font-bold"> Brand building.</span> Crafting memorable
+              brand identities. Connect deeply with audiences and elevate your
+              reputation.
+            </p>
+          </div>
+
+          <div class="flex pt-5 items-top gap-4">
+            <img
+              src="https://www.shutterstock.com/image-vector/light-bulb-line-icon-vector-260nw-416374336.jpg"
+              alt="bulb"
+              class="rounded-full mt-1 h-6 w-6"
+            />
+            <p class="w-[100%]">
+              <span class="font-bold"> Brand building.</span> Crafting memorable
+              brand identities. Connect deeply with audiences and elevate your
+              reputation.
+            </p>
+          </div>
+
+          <div class="flex pt-5 pb-10 items-top gap-4">
+            <img
+              src="https://www.shutterstock.com/image-vector/light-bulb-line-icon-vector-260nw-416374336.jpg"
+              alt="bulb"
+              class="rounded-full mt-1 h-6 w-6"
+            />
+            <p class="w-[100%]">
+              <span class="font-bold"> Brand building.</span> Crafting memorable
+              brand identities. Connect deeply with audiences and elevate your
+              reputation.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-top gap-4">
+            <img
+              src="https://www.shutterstock.com/image-vector/light-bulb-line-icon-vector-260nw-416374336.jpg"
+              alt="bulb"
+              class="rounded-full mt-1 h-6 w-6"
+            />
+            <p class="w-[100%]">
+              <span class="font-bold"> Brand building.</span> Crafting memorable
+              brand identities. Connect deeply with audiences and elevate your
+              reputation.
+            </p>
+          </div>
+
+          <div class="flex pt-5 items-top gap-4">
+            <img
+              src="https://www.shutterstock.com/image-vector/light-bulb-line-icon-vector-260nw-416374336.jpg"
+              alt="bulb"
+              class="rounded-full mt-1 h-6 w-6"
+            />
+            <p class="w-[100%]">
+              <span class="font-bold"> Brand building.</span> Crafting memorable
+              brand identities. Connect deeply with audiences and elevate your
+              reputation.
+            </p>
+          </div>
+
+          <div class="flex pt-5 pb-10 items-top gap-4">
+            <img
+              src="https://www.shutterstock.com/image-vector/light-bulb-line-icon-vector-260nw-416374336.jpg"
+              alt="bulb"
+              class="rounded-full mt-1 h-6 w-6"
+            />
+            <p class="w-[100%]">
+              <span class="font-bold"> Brand building.</span> Crafting memorable
+              brand identities. Connect deeply with audiences and elevate your
+              reputation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-40 px-28">
+      
+        <div>
+          <h3 class="text-5xl font-bold">Our offices</h3>
+        </div>
+
+        <div class="pt-40 flex gap-x-16">
+          <div class="flex pb-20 gap-x-6">
+            <div class="flex-col">
+              <div class="w-0.5 h-1/2 bg-sky-700"></div>
+
+              <div class="w-0.5 h-1/2 bg-sky-200"></div>
+            </div>
+            <div>
+              <h5 class="text-xl font-semibold">Countryland</h5>
+              <h5 class="pt-2">123 Elm Street</h5>
+              <h5 class="pt-2">Mapletown, MT 56789</h5>
+            </div>
+          </div>
+
+          <div class="flex pb-20 gap-x-6">
+            <div class="flex-col">
+              
+                <div class="w-0.5 h-1/2 bg-sky-700"></div>
+
+              <div class="w-0.5 h-1/2 bg-sky-200"></div>
+            </div>
+            <div>
+              <h5 class="text-xl font-semibold">Countryland</h5>
+              <h5 class="pt-2">123 Elm Street</h5>
+              <h5 class="pt-2">Mapletown, MT 56789</h5>
+            </div>
+          </div>
+
+          <div class="flex pb-20 gap-x-6">
+            <div class="flex-col">
+              <div class="w-0.5 h-1/2 bg-sky-700"></div>
+
+              <div class="w-0.5 h-1/2 bg-sky-200"></div>
+            </div>
+            <div>
+              <h5 class="text-xl font-semibold">Countryland</h5>
+              <h5 class="pt-2">123 Elm Street</h5>
+              <h5 class="pt-2">Mapletown, MT 56789</h5>
+            </div>
+          </div>
+
+          <div class="flex pb-20 gap-x-6">
+            <div class="flex-col">
+              <div class="w-0.5 h-1/2 bg-sky-700"></div>
+
+              <div class="w-0.5 h-1/2 bg-sky-200"></div>
+            </div>
+            <div>
+              <h5 class="text-xl font-semibold">Countryland</h5>
+              <h5 class="pt-2">123 Elm Street</h5>
+              <h5 class="pt-2">Mapletown, MT 56789</h5>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+  </body>
 </html>
