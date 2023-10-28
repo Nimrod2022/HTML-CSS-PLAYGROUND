@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav class="flex items-center justify-between px-28 py-5">
+      <nav class="flex items-center justify-between px-5 md:px-28 py-5">
         <!-- gaps- 1,2,3,4,5,6,7,8,9,10 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96 -->
         <div class="flex gap-12 items-center">
           <div class="p-2">
@@ -19,7 +24,8 @@
               class="h-12"
             />
           </div>
-          <div>
+          <!-- hidden on mobile block on desktop -->
+          <div class="hidden md:block">
             <ul class="flex gap-10">
               <li class="hover:bg-blue-100 p-2 hover:rounded-md">Home</li>
               <li class="hover:bg-blue-100 p-2 hover:rounded-md">About</li>
@@ -27,16 +33,34 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="flex items-center gap-2">
           <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">
             Contact us
           </button>
+          <!-- added hamburger menu bar on mobile -->
+          <div class="block md:hidden" onclick="handleNav()">
+            <i class="fas fa-bars text-3xl"></i>
+          </div>
         </div>
       </nav>
+      <!-- added nav bar on mobile -->
+      <nav class="">
+        <ul
+          class="w-[90%] mx-5 bg-[#fff] text-center rounded-lg gap-10 shadow-xl mt-2 hidden"
+          id="nav"
+        >
+          <li class="hover:bg-blue-100 p-2 hover:rounded-md">Home</li>
+          <li class="hover:bg-blue-100 p-2 hover:rounded-md">About</li>
+          <li class="hover:bg-blue-100 p-2 hover:rounded-md">Projects</li>
+          <li class="hover:bg-blue-100 p-2 hover:rounded-md">Projects</li>
+        </ul>
+      </nav>
     </header>
-    <section class="flex px-28 pt-20 items-center">
+    <section
+      class="flex flex-col md:flex-row gap-5 px-5 md:px-28 pt-12 md:pt-20 items-center"
+    >
       <div class="w-[100%]">
-        <h1 class="font-bold text-5xl">
+        <h1 class="font-bold text-3xl md:text-5xl">
           Elevate your digital marketing frontier
         </h1>
         <p class="py-10">
@@ -44,10 +68,16 @@
           with innovative, targeted strategies.
         </p>
         <div class="flex gap-5">
-          <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">
+          <button
+            type="button"
+            class="bg-blue-700 w-[50%] p-2 text-[white] rounded-md"
+          >
             Contact us
           </button>
-          <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">
+          <button
+            type="button"
+            class="bg-blue-700 w-[50%] p-2 text-[white] rounded-md"
+          >
             Learn more
           </button>
         </div>
@@ -63,10 +93,10 @@
     </section>
 
     <!--Sponsors section-->
-    <section class="flex px-28 pt-20 py-20 items-center">
+    <section class="px-5 md:px-28 pt-20 py-20">
       <div>
         <p class="font-bold">Endorsed by global brands and startups</p>
-        <div class="flex pt-10 items-center gap-28">
+        <div class="grid pt-10 gap-10 md:gap-28 grid-cols-2 md:grid-cols-4">
           <div class="flex items-center space-x-4">
             <img
               src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg"
@@ -93,11 +123,19 @@
             />
             <h5 class="font-bold text-1xl">PetOil</h5>
           </div>
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg"
+              alt="go-logo"
+              class="rounded-full h-12 w-12"
+            />
+            <h5 class="font-bold text-1xl">PetOil</h5>
+          </div>
         </div>
       </div>
     </section>
     <!--Description section-->
-    <section class="px-28 pt-20 bg-gray-700 text-white">
+    <section class="px-5 md:px-28 pt-20 bg-gray-700 text-white">
       <div class="pb-22">
         <h3 class="font-bold text-3xl">Case studies</h3>
         <p class="py-5 text-lg leading-2">
@@ -108,7 +146,9 @@
 
       <hr class="my-8 border-t-1 border-gray-400" />
 
-      <div class="flex pt-6 gap-28 pb-20 items-center">
+      <div
+        class="flex flex-col md:flex-row pt-6 gap-16 md:gap-28 pb-20 items-center"
+      >
         <div class="flex-col">
           <div class="flex items-center space-x-4">
             <div>
@@ -191,7 +231,7 @@
       </div>
     </section>
     <!---->
-    <section class="px-28 pt-20">
+    <section class="px-5 md:px-28 pt-20">
       <div class="flex items-center space-x-4">
         <img
           src="https://assets.website-files.com/6500862f771296a8bf994fd9/6501eeb63ae8a32e9c2a9e58_logo.jpeg"
@@ -201,7 +241,7 @@
         <h5 class="font-bold text-2xl text-[#6083E3]">Logoipsum</h5>
       </div>
 
-      <p class="w-[50%] pt-10 font-semibold text-xl">
+      <p class="md:w-[50%] pt-10 font-semibold text-xl">
         "Working with PixelPulse was a game-changer. Their team's expertise
         dramatically elevated our online presence, ensuring we resonated with
         our target audience like never before."
@@ -211,18 +251,18 @@
       <h4 class="pb-20">TechSolutions Inc.</h4>
     </section>
 
-    <section class="px-28 pt-10 bg-gray-700 text-white">
+    <section class="px-5 md:px-28 pt-10 bg-gray-700 text-white">
       <div>
         <h5 class="text-1xl text-[#6083E3]">Services</h5>
         <h2 class="text-2xl pt-5">Digital solutions delivered</h2>
-        <p class="text-1xl pt-5 w-[50%]">
+        <p class="text-1xl pt-5 md:w-[50%]">
           Expert strategies tailored for your business. Experience growth,
           innovation, and increased market presence.
         </p>
       </div>
 
-      <div class="pt-10 flex">
-        <div>
+      <div class="pt-10 flex flex-col md:flex-row md:gap-12">
+        <div class="flex flex-col gap-5">
           <div class="flex items-top gap-4">
             <img
               src="https://www.shutterstock.com/image-vector/light-bulb-line-icon-vector-260nw-416374336.jpg"
@@ -263,7 +303,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="flex flex-col gap-5">
           <div class="flex items-top gap-4">
             <img
               src="https://www.shutterstock.com/image-vector/light-bulb-line-icon-vector-260nw-416374336.jpg"
@@ -306,12 +346,12 @@
       </div>
     </section>
 
-    <section class="pt-40 px-28 pb-40">
+    <section class="pt-40 px-5 md:px-28 pb-40">
       <div>
         <h3 class="text-5xl font-bold">Our offices</h3>
       </div>
 
-      <div class="pt-20 flex gap-x-16">
+      <div class="pt-20 flex flex-col md:flex-row gap-x-16">
         <div class="flex pb-20 gap-x-6">
           <div class="flex-col">
             <div class="w-0.5 h-1/2 bg-sky-700"></div>
@@ -366,7 +406,10 @@
       </div>
 
       <div class="pb-20">
-        <button type="button" class="bg-blue-700 p-2 text-[white] rounded-md">
+        <button
+          type="button"
+          class="bg-blue-700 p-2 text-[white] w-[100%] md:w-[10%] rounded-md"
+        >
           Contact us
         </button>
       </div>
@@ -374,7 +417,7 @@
       <div
         class="pt-10 rounded-[24px] items-center pb-20 bg-gray-700 text-white"
       >
-        <div class="items-center my-12 m-48">
+        <div class="items-center my-12 md:m-48">
           <h2 class="font-bold text-center text-3xl">
             Subscribe to our newsletter
           </h2>
@@ -401,18 +444,20 @@
         </div>
       </div>
     </section>
-    <section class="px-28 pt-20 bg-gray-700 text-white">
+    <section class="md:px-28 pt-20 bg-gray-700 text-white">
       <footer>
-        <div class="flex-col gap-12 py-2 p-56 items-center">
-          <div class="pb-10">
+        <div class="flex-col gap-12 py-2 items-center">
+          <div class="pb-10 flex justify-center">
             <img
               src="https://assets.website-files.com/64fb00e0ee6d5efc80b543ff/6502077d886192f877ea1abf_PIXEL%20PULSE%20Light.svg"
               alt="logo"
-              class="h-12 px-56"
+              class="h-12"
             />
           </div>
           <div>
-            <ul class="flex gap-10">
+            <ul
+              class="flex flex-col items-center md:flex-row justify-center gap-10"
+            >
               <li class="hover:bg-gray-600 p-2 hover:rounded-md">Home</li>
               <li class="hover:bg-gray-600 p-2 hover:rounded-md">About</li>
               <li class="hover:bg-gray-600 p-2 hover:rounded-md">Projects</li>
@@ -423,7 +468,7 @@
             </ul>
           </div>
         </div>
-        <div class="flex gap-x-6 px-72 pt-2">
+        <div class="flex justify-center gap-10 pt-5">
           <a href="https://www.instagram.com/">
             <img
               src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png"
@@ -464,17 +509,19 @@
           </a>
         </div>
 
-        <div class="pt-20">
-          <hr class="w-[100%] py-5 h-1px bg-gray-700 pb-10" />
+        <div class="pt-10">
+          <hr class="w-[100%] py-5 h-1px bg-gray-700" />
         </div>
 
-        <div class="flex items-center pb-20 justify-between">
+        <div
+          class="flex flex-col-reverse gap-5 md:flex-row items-center pt-5 pb-20 justify-between"
+        >
           <ul>
             <li class="text-sm">
               © 2023 Your Company, Inc. All rights reserved.
             </li>
           </ul>
-          <ul class="flex gap-4 text-sm">
+          <ul class="flex flex-col md:flex-row items-center gap-4 text-sm">
             <li class="hover:bg-gray-600 p-2 hover:rounded-md">Licenses</li>
             <li class="hover:bg-gray-600 p-2 hover:rounded-md">Changelog</li>
             <li class="hover:bg-gray-600 p-2 hover:rounded-md">Style guide</li>
