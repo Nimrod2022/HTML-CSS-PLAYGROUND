@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Confy</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
       <div
-        class="bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] bg-cover bg bg-center px-28 pt-5 h-screen w-full"
-      >
+        class="relative bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] bg-cover bg bg-center px-28 pt-5 h-screen w-full"
+      >     
+      
         <div class="w-">
           <nav class="items-center justify-between">
             <div class="flex gap-80 bg-fuchsia-50 items-center rounded-md">
@@ -120,21 +122,68 @@
 
             <div class="pt-20 pb-20 items-center flex gap-20">
              
-                <div class="bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] cursor-pointer bg-cover bg bg-center px-28 pt-5 h-64 w-72 rounded-lg">
-                    
+                <div class="bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] items-center cursor-pointer bg-cover bg bg-center px-28 pt-5 h-64 w-72 rounded-lg">
+                    <Div class="pt-20 items-center font-semibold text-fuchsia-50 text-2xl">
+                      <a href="https://confy-template.webflow.io/schedule">Schedule</a>
+                    </Div>
 
                 </div>
                 <div class="bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] cursor-pointer bg-cover bg bg-center px-28 pt-5 h-64 w-72 rounded-lg">
-
+                  <Div class="pt-20 items-center font-semibold text-fuchsia-50 text-2xl">
+                    <a href="https://confy-template.webflow.io/schedule">Speakers</a>
+                  </Div>
                 </div>
                 <div class="bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] cursor-pointer bg-cover bg bg-center px-28 pt-5 h-64 w-72 rounded-lg">
-
+                  <Div class="pt-20 items-center font-semibold text-fuchsia-50 text-2xl">
+                    <a href="https://confy-template.webflow.io/schedule">Gallery</a>
+                  </Div>
                 </div>
-
             </div>
         </div>
+    </section>
+    <section class="px-28 bg-slate-100 pt-20">
+      <div class="flex gap-4">
+        <div>
+            <h3 class="font-semibold text-3xl">Schedule</h3>
+        </div>
+        <div class="flex items-center">
+            <div>
+            <hr class="border-t-2 w-96 border-[#d9000d]" />
+            </div>
+            <div>
+                <hr class="border-t-2 w-96 border-[#d9000d]" />
+            </div>
+            <div>
+                <hr class="border-t-2 w-24 border-[#d9000d]" />
+            </div>
+        </div>
+    </div>
+    <div class="items flex pt-20 gap-12 items center pb-5 ">
+      <div class="p-1 w-[8%] border-b-2 border-rose-400">
+        <h5 class="text-center text-md cursor-pointer ">Friday</h5>
+      </div>
+      <div class="p-1 hover:border-b-2 w-[8%] hover:border-rose-400">
+        <h5 class="text-center text-md cursor-pointer">Saturday</h5>
+      </div>
+      <div class="p-1 hover:border-b-2 w-[8%] hover:border-rose-400 cursor-pointer">
+        <h5 class="text-center text-md">Sunday</h5>
+      </div>
+    </div>
+    <div>
+      <div class="flex items-center bg-white px-6 rounded-md gap-6">
+        <div>
+          <p class="font-semibold">3:15 pm</p>
+        </div>
+        <div class="pt-1">
+          <p class="font-semifold">Registration</p>
+          <p class="pt-1">Join us and register you are with us</p>
+        </div>
+      </div>
+      <div class="pt-15">
 
-
+      </div>
+    </div>
+    
     </section>
   </body>
 </html>
