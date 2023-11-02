@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Confy</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,12 +18,12 @@
     <div
       class="relative bg-fixed bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] bg-cover bg bg-center md:px-28 px-5 pt-5 h-screen w-full">
 
-      <div class="invisible md:visible">
+      <div>
         <nav class="items-center justify-between">
-          <div class="flex gap-80 bg-fuchsia-50 items-center rounded-md">
+          <div class="flex gap-80 md:bg-fuchsia-50 items-center rounded-md">
             <img src="https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6e904da2ae97b4962f9d4d_confy-logo.png"
-              alt="logo" class="h-[10%] w-[10%] pt-3 pb-3 px-5" />
-            <div class="flex gap-10">
+              alt="logo" class="h-[20%] md:h-[10%] w-[20%] md:w-[10%] pt-3 pb-3 px-3" />
+            <div class="flex hidden md:block gap-10">
               <div class="pt-3 pb-3">
                 <ul class="flex gap-10">
                   <li class="p-2 hover:border-b-2 hover:border-rose-400">
@@ -42,15 +46,21 @@
                   Buy Ticket
                 </button>
               </div>
+              
             </div>
+            <div class="block md:hidden">
+            <i class="fas fa-bars text-3xl"></i>
+          </div>
           </div>
         </nav>
       </div>
       <div>
         <div>
           <h5 class="text-fuchsia-50 font-semibold md:pt-20">San Francisco, 4-6 May 2020</h5>
-          <h2 class="text-fuchsia-50 font-bold pt-5  md:w-[50%] text-2xl md:text-5xl">Conference template for designers</h2>
-          <p class="text-fuchsia-50  md:w-[50%] pt-2 text-xl">Are you looking for template to create event website? Confy
+          <h2 class="text-fuchsia-50 font-bold pt-5  md:w-[50%] text-2xl md:text-5xl">Conference template for designers
+          </h2>
+          <p class="text-fuchsia-50  md:w-[50%] pt-2 text-xl">Are you looking for template to create event website?
+            Confy
             is perfect Webflow template to design conference site.</p>
         </div>
         <div class="pt-10">
@@ -106,7 +116,7 @@
         </p>
       </div>
 
-      <div class="md:pt-20 pt-10 pb-10 md:pb-20 items-center md:flex md:gap-20">
+      <div class="md:pt-20 pt-10 pb-10 md:pb-20 items-center flex flex-col md:flex-row gap-5 md:gap-20">
 
         <div
           class="bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] items-center cursor-pointer bg-cover pb-5 bg bg-center px-28 pt-5 h-56 md:h-64 md:w-72 rounded-lg">
@@ -117,15 +127,15 @@
         </div>
         <div
           class="bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] cursor-pointer bg-cover bg bg-center px-28 md:pt-5 h-56 md:h-64 md:w-72 rounded-lg">
-          <Div class="pt-20 items-center font-semibold text-fuchsia-50 text-2xl">
+          <div class="pt-20 items-center font-semibold text-fuchsia-50 text-2xl">
             <a href="https://confy-template.webflow.io/schedule">Speakers</a>
-          </Div>
+          </div>
         </div>
         <div
           class="bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6ba8110db2f166916dddd8_san-francisco.jpg')] cursor-pointer bg-cover bg bg-center px-28 pt-5 h-56 md:h-64 md:w-72 rounded-lg">
-          <Div class="pt-20 items-center font-semibold text-fuchsia-50 text-2xl">
+          <div class="pt-20 items-center font-semibold text-fuchsia-50 text-2xl">
             <a href="https://confy-template.webflow.io/schedule">Gallery</a>
-          </Div>
+          </div>
         </div>
       </div>
     </div>
@@ -257,7 +267,7 @@
   <section class="px-5 md:px-28 pt-20 pb-50">
     <div>
       <div class="flex gap-6">
-        <div >
+        <div>
           <h3 class="font-semibold text-3xl">Speakers</h3>
         </div>
         <div class="hidden md:flex items-center">
@@ -396,7 +406,8 @@
     class=" px-16 md:px-28 pt-10 bg-gray-400 pb-20 text-white  bg-[url('https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6e586ae64d7d3811d617f5_parallax.jpg')] bg-cover">
     <div>
       <div>
-        <h2 class="text-fuchsia-50 font-bold pt-5 text-1xl w-[75%] md:w-[50%] md:text-3xl">Try Confy and create beautiful event website.</h2>
+        <h2 class="text-fuchsia-50 font-bold pt-5 text-1xl w-[75%] md:w-[50%] md:text-3xl">Try Confy and create
+          beautiful event website.</h2>
       </div>
       <div class="pt-10">
         <button type="button"
@@ -567,9 +578,9 @@
       </div>
     </div>
   </section>
-  <section class="px-28 pb-10 pt-20">
-    <footer class="flex justify-between">
-      <div>
+  <section class="px-5 md:px-28 pb-10 pt-20">
+    <footer class="md:flex justify-between">
+      <div class="pb-5">
         <div>
           <img src="https://assets.website-files.com/5e6b821f127853aac72d6ade/5e6e904da2ae97b4962f9d4d_confy-logo.png"
             alt="logo-2" class="h-8 w-20 cursor-pointer">
