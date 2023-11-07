@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Journal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div
-        class="bg-fixed bg-[url('https://assets-global.website-files.com/64c2e60403eef3ab6fec4b53/64cb24b2d4f6301b86e0639b_gear-up-for-adventure-featured-image-journal-x-webflow-template-p-2000.jpg')] bg-center bg-cover w-full h-screen"
-      >
-        <div>
-          <nav class="pt-10 justify-between items-center px-10 flex">
-            <div class="flex gap-10">
-              <div class="items-center">
-                <img
-                  src="https://assets-global.website-files.com/64c2e60403eef3ab6fec4ba5/64c6fb2fc687ba041e367965_dark-logo-web-journal-x-webflow-template.svg"
-                  alt="logo"
-                />
-              </div>
-              <div class="text-white text-xl font-semibold">
-                <ul class="flex gap-10 items-center">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Pages</li>
-                  <li>Contact</li>
-                  <li>Cart</li>
-                </ul>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div
+      class="bg-fixed bg-[url('https://assets-global.website-files.com/64c2e60403eef3ab6fec4b53/64cb24b2d4f6301b86e0639b_gear-up-for-adventure-featured-image-journal-x-webflow-template-p-2000.jpg')] bg-center bg-cover w-full h-screen">
+      <div>
+        <nav class="pt-10 justify-between items-center px-10 flex">
+          <div class="flex gap-10">
+            <div class="items-center">
+              <img
+                src="https://assets-global.website-files.com/64c2e60403eef3ab6fec4ba5/64c6fb2fc687ba041e367965_dark-logo-web-journal-x-webflow-template.svg"
+                alt="logo" />
             </div>
-            <div
-              class="justify-end text-lg items-center font-semibold rounded-full p-2 bg-white hover:cursor-pointer"
-            >
-              <button type="button">Subscribe</button>
+            <div class="text-white md:block hidden text-lg font-semibold">
+              <ul class="flex gap-10 items-center">
+                <li class="hover:cursor-pointer">Home</li>
+                <li class="hover:cursor-pointer">About</li>
+                <li class="hover:cursor-pointer">Pages</li>
+                <li class="hover:cursor-pointer">Contact</li>
+                <li class="hover:cursor-pointer">Cart</li>
+              </ul>
             </div>
-          </nav>
+          </div>
+
+          <div
+            class="justify-end text-lg items-center font-semibold rounded-full bg-white hover:cursor-pointer p-4 hidden md:block">
+            <button type="button">Subscribe</button>
+          </div>
+          <div class="block md:hidden" onclick="handleNav()">
+            <i class="fas fa-bars text-3xl text-white"></i>
+          </div>
+      </div>
+      </nav>
+      <div class="px-10 pt-28">
+        <div class="flex items-center gap-4">
+          <div class="bg-white rounded-full flex h-8 w-24 p-2 items-center gap-2">
+            <img
+                src="https://assets-global.website-files.com/64c2e60403eef3ab6fec4b53/64c964a0a7742f2cc6f384c1_gear-icon-journal-x-webflow-template.svg" alt="date">
+            <p class="font-bold">Gear</p>         
+            
+          </div>
+          <div>
+            <p class="text-white">November 7, 2023</p>
+          </div>
+        </div>
+        <div class="text-white pt-8">
+          <p class="text-5xl font-semibold">Gear up for adventure: </p>
+          <p class="text-5xl font-semibold pt-3 w-[50%]"> Equipment for outdoor enthusiasts</p>
+          <p class="w-[50%] pt-3">Lorem ipsum dolor sit amet consectetur
+            iincidunt malesuada sed nec eu imperdiet imperdiet nisl. 
+            Nulla gravida urna sit in a enim odio facilisis ut ultrices rhoncus.</p>
         </div>
       </div>
-    </header>
-  </body>
+    </div>  
+    
+  </header>
+  <section class="pt-20 px-10">
+    <div >
+      <div class="flex justify-between">
+        <div>
+          <h3 class="text-3xl font-bold"> Article Categories</h3>
+        </div>
+        <div class="rounded-full border-2 h-10 w-56 px-5 pt-1 items-center border-neutral-200">
+          <h3 class="text-lg">Browse all categories</h3>
+        </div>
+      </div>
+
+      <div class="pt-16">
+        <div class="bg-[url('https://assets-global.website-files.com/64c2e60403eef3ab6fec4b53/64cb24ee8700d259e7389690_travel-thumbnail-image-journal-x-webflow-template-p-800.jpg')] h-56 w-48">
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
 </html>
